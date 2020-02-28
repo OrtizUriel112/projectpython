@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: DockerFile
+    image: '0rt1z112/projectpython/helloworld'
