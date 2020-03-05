@@ -4,6 +4,9 @@
      docker:
        - image: circleci/python:3.8.1
      steps:
+      - restore_cache:
+         keys:
+           - m2-{{ checksum "requirements.txt" }}
        - checkout
        - run: pip install pystrich
        - run: python --version
