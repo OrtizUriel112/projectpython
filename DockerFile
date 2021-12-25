@@ -1,4 +1,3 @@
-FROM python:3.8.1
-ADD helloworld.py /
-RUN pip install pystrich
+FROM python:3.8.11-alpine
+ADD helloworld.py .
 CMD [ "python", "helloworld.py" ]
